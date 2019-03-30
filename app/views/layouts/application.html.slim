@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    /== render "layouts/analytics"
+    == render "layouts/tag_head"
 
     meta charset="UTF-8"
     meta http-equiv="X-UA-Compatibile" content="IE=edge"
@@ -26,6 +26,7 @@ html
     = stylesheet_link_tag 'application', media: 'all'
 
   body
+    == render "layouts/tag_body"
     == render "layouts/header"
 
     == yield
